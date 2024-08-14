@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/newsletter.css">
+  <link rel="stylesheet" href="./css/mdb.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>Thriving not Survivng - Newsletter sign-up form</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+        .navbar .nav-link {
+          color: #fff !important;
+        }
+
+        * {
+    box-sizing: border-box;
+        }
+        
+        /* body */
+        body {
+          font-family: Arial;
+          margin: 0;
+        }
+        
+        /* Header */
+        .header {
+          padding: 60px;
+          text-align: center;
+          background: #e5b1b1;
+          color: white;
+        }
+        
+        /* top nav bar */
+        .navbar {
+          list-style-type: none;
+          display: flex;
+          background-color: #333;
+          text-align: center;
+          text-decoration: none;
+        }
+        
+        /* nav bar links */
+        .navbar a {
+          list-style-type: none;
+          color: white;
+          padding: 14px 20px;
+          text-decoration: none;
+          text-align: center;
+        }
+        
+        /* hover */
+        .navbar a:hover, .dropdown:hover .dropbtn {
+          background-color: #ddd;
+          color: black;
+          opacity: 0.7;
+        }
+  
+        .row {  
+          display: flex;
+          flex-wrap: wrap;
+        }
+        
+        .side {
+          flex: 30%;
+          background-color: #f1f1f1;
+          padding: 20px;
+        }
+        
+        .main {
+          flex: 70%;
+          background-color: white;
+          padding: 20px;
+        }
+
+        .img {
+          background-color: #aaa;
+          width: 100%;
+          padding: 20px;
+        }
+        
+        .box {
+          background-color: #e5b1b1;
+          width: 100%;
+          padding: 20px;
+        }
+      
+        .footer {
+          padding: 20px;
+          text-align: center;
+          background: #ddd;
+        }
+
+        @media screen and (max-width: 700px) {
+          .row, .navbar {   
+            flex-direction: column;
+          }
+        }
+
+        /* dropdown nav menu & submenu style */
+        nav ul li{
+          list-style-type: none;
+          display: inline-block;
+          background-color: #333;
+          text-align: center;
+          padding: 0.3rem 0 0 0.1rem;
+          }
+        nav ul li:last-child{
+          margin-right: 0;
+          background-color: #333;
+          }
+        nav ul li a{
+          color: #333;
+          display: inline-block;
+          transition: all ease 0.3s;
+          background-color: #333;
+          list-style-type: none;
+          color: white;
+          padding: 0.3rem 0 0 0.1rem;
+          text-decoration: none;
+          text-align: center;
+          }
+        nav ul li a:hover{
+          color: #333;
+          background-color: #333;
+          }
+        nav ul .submenu{
+          list-style-type: none;
+          position: absolute;
+          width: 200px; 
+          box-shadow: 0 20px 45px #00000020;
+          margin-top: center;
+          margin-bottom: center;
+          opacity: 0;
+          transition: all ease 0.5s;
+          background-color: #333;
+          }
+        nav ul li:hover .submenu{
+          opacity: 1;
+          margin-top: 0;
+          background-color: #333;
+          text-align: left;
+          }
+        nav ul .submenu li{
+          margin: 0;
+          width: 100%;
+          background-color: #333;
+          text-align: left;
+          } 
+        nav ul .submenu li a{
+          display: inline-block;
+          width: 100%;
+          background-color: #333;
+          text-align: left;
+          }
+  </style> 
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="z-index: 2000;">
+    <script href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+    <script href="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><strong>Home</strong></a>
+      <ul>
+        <li><a class="nav navbar" style="padding: 15px 0 0 5px;" href="#">Chronic Illnesses</a>
+            <ul class="submenu">
+                <li><a class="nav" href="./crohns.html">Crohn's Disease</a></li>
+                <li><a class="nav" href="./addisons.html">Addison's Disease</a></li>
+                <li><a class="nav" href="./triad.html">The Triad</a></li>
+                <li><a class="nav" href="./osteo.html">Osteoporosis</a></li>
+                <li><a class="nav" href="./stoma.html">Stoma</a></li>
+            </ul>
+        </li>
+      </ul>
+      <a class="nav" href="./resources.html">Resources</a>
+      <a class="nav" href="https://www.pinterest.co.uk/Charmau24/crohns/"><i class="fa fa-pinterest" style="font-size:24px"></i></a>
+      <a class="nav" href="https://www.linkedin.com/in/charlotte-maughan"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a>           
+      </div>
+    </div>
+ </nav>
+
+
+    <div class="container" id="container">
+      <div class="left" id="left">
+       <div class="left-info">
+          <h1>Stay updated!</h1>        
+          <p>  Receive monthly updates on:</p>
+          <ul>
+              <li>Being a boss b@!ch</li>
+              <li>Latest on chronic health conditions</li>
+              <li>And much more!</li>
+          </ul>
+        </div>
+        
+        <form id="form">
+          <div class="form-item">
+            <label for="email">
+              <p>Email address</p>  
+              <p class="vaild-required" id="vaild">Vaild email required</p>
+            </label>
+            <input type="email" name="email" id="email-input" placeholder="email@domain.com">
+          </div>
+          <div class="form-item">
+            <button type="submit" id="submit-btn">Subscribe to the monthly newsletter!</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="container" id="container">
+        <div class="right" id="right">
+          <source media="(max-width:768px)">
+          <img src="./assets/images/femaleboss.webp" style="width: 30vw" alt="">
+        </div>
+      </div>
+
+      <div class="confirm-message" id="confirm-message">
+        <img src="assets/images/icon-success.svg" alt="">
+           <h2>Thanks for subscribing!</h2>
+            <p>
+              A confirmation email has been sent to <span id="user-email"></span>. 
+              Please open it and click the button inside to confirm your subscription.
+            </p>
+            <a href="./index.html">
+            <button id="dissmiss">Back to home page</button>
+            </a>
+      </div>
+
+    </div>
+
+  <div class="attribution">
+    Adapted challenge from <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  </div> 
+</body>
+<script src="./js/newsletter.js"></script>
+</html>
